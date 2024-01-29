@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--- <script src="./app.js"></script> -->
+    <title>Pakistan Elections</title>
+</head>
+
+<body class="bg">
+    <script>
+        function addVotePTI() {
+            var value = parseInt(document.getElementById('PTI').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+
+            document.getElementById('PTI').value = value;
+            document.getElementById("PTI").innerHTML = value;
+        } 
+        function addVoteMQM() {
+            var value = parseInt(document.getElementById('MQM').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('MQM').value = value;
+            document.getElementById("MQM").innerHTML = value;
+        } 
+        function addVotePPP() {
+            var value = parseInt(document.getElementById('PPP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('PPP').value = value;
+            document.getElementById("PPP").innerHTML = value;
+        } 
+        function addVoteJI() {
+            var value = parseInt(document.getElementById('JI').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('JI').value = value;
+            document.getElementById("JI").innerHTML = value;
+        } 
+    </script>
+    <nav class="flex p-3 bg-green-500">
+        <img src="./Images/Logo.png" alt="Logo" class="w-10">
+        <p class="font-extrabold text-3xl text-white ml-5 -mt-[2px] font-serif">Pakistan Elections</p>
+    </nav>
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 px-12 mt-28 cards">
+        <div class="card bg-white w-80 m-16 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500">
+            <img src="./Images/PTI.png" alt="PTI" class="w-32 mx-auto mb-3">
+            <p class="pl-16">Pakistan Tehreek-e-Insaaf</p>
+            <div class="votes pl-32 my-3">
+                <span id="PTI">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVotePTI()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl ml-[94px]">Vote</button>
+        </div>
+        <div class="card bg-white w-80 m-16 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500">
+            <img src="./Images/MQM.png" alt="MQM" class="w-32 mx-auto mb-3">
+            <p class="pl-16">Muttahida Qomi Movement</p>
+            <div class="votes pl-32 my-3">
+                <span id="MQM">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVoteMQM()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl ml-[94px]">Vote</button>
+        </div>
+        <div class="card bg-white w-80 m-16 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500">
+            <img src="./Images/JI.png" alt="JI" class="w-32 mx-auto mb-3">
+            <p class="ml-24">Jamaat-e-Islami</p>
+            <div class="votes pl-32 my-3">
+                <span id="JI">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVoteJI()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl ml-[94px]">Vote</button>
+        </div>
+        <div class="card bg-white w-80 m-16 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500">
+            <img src="./Images/PPP.png" alt="PPP" class="w-32 mx-auto mb-3">
+            <p class="pl-20">Pakistan People's Party</p>
+            <div class="votes pl-32 my-3">
+                <span id="PPP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <button onclick="addVotePPP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl ml-[94px] btn">Vote</button>
+        </div>
+    </div>
+</body>
+
+</html>

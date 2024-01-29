@@ -9,7 +9,7 @@
     <script>
         function addVotePTI() {
             var value = parseInt(document.getElementById('PTI').value, 10);
-            value = isNaN(value) ? 10000000 : value;
+            value = isNaN(value) ? 125 : value;
             value++;
 
             document.getElementById('PTI').value = value;
@@ -28,6 +28,64 @@
             value++;
             document.getElementById('PPP').value = value;
             document.getElementById("PPP").innerHTML = value;
+        } 
+        function addVotePMLN() {
+            var value = parseInt(document.getElementById('PMLN').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('PMLN').value = value;
+            document.getElementById("PMLN").innerHTML = value;
+        } 
+        function addVotePML() {
+            var value = parseInt(document.getElementById('PML').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+
+            document.getElementById('PML').value = value;
+            document.getElementById("PML").innerHTML = value;
+        } 
+        function addVoteJUI() {
+            var value = parseInt(document.getElementById('JUI').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('JUI').value = value;
+            document.getElementById("JUI").innerHTML = value;
+        } 
+        function addVoteNP() {
+            var value = parseInt(document.getElementById('NP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('NP').value = value;
+            document.getElementById("NP").innerHTML = value;
+        } 
+        function addVoteANP() {
+            var value = parseInt(document.getElementById('ANP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('ANP').value = value;
+            document.getElementById("ANP").innerHTML = value;
+        } 
+        function addVotePMAP() {
+            var value = parseInt(document.getElementById('PMAP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+
+            document.getElementById('PMAP').value = value;
+            document.getElementById("PMAP").innerHTML = value;
+        } 
+        function addVoteBAP() {
+            var value = parseInt(document.getElementById('BAP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('BAP').value = value;
+            document.getElementById("BAP").innerHTML = value;
+        } 
+        function addVoteBNP() {
+            var value = parseInt(document.getElementById('BNP').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('BNP').value = value;
+            document.getElementById("BNP").innerHTML = value;
         } 
         function addVoteJI() {
             var value = parseInt(document.getElementById('JI').value, 10);
@@ -49,7 +107,7 @@
             <img src="./Images/PTI.png" alt="PTI" class="w-32 mx-auto mb-3">
             <p class="text-center">Pakistan Tehreek-e-Insaaf</p>
             <div class="my-3 text-center">
-                <span id="PTI">10000000</span>
+                <span id="PTI">125</span>
                 <span class="">VOTES</span>
             </div>
             <div class="line"></div>
@@ -86,6 +144,92 @@
                 <span class="">VOTES</span>
             </div>
             <button onclick="addVotePPP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px] btn">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16 m-auto">
+            <img src="./Images/PMLN.png" alt="PMLN" class="w-32 mx-auto mb-3">
+            <p class="text-center">Pakistan Muslim League (N)</p>
+            <div class="my-3 text-center">
+                <span id="PMLN">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVotePMLN()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/JUI.png" alt="MQM" class="w-28 mx-auto mb-3">
+            <p class="text-center">Jamiat Ulema-e-Islam</p>
+            <div class="text-center my-3">
+                <span id="JUI">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVoteJUI()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/PML.png" alt="JI" class="w-32 mx-auto mb-3">
+            <p class="text-center">Pakistan Muslim League</p>
+            <div class="text-center my-3">
+                <span id="PML">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVotePML()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/ANP.png" alt="PPP" class="w-32 mx-auto mb-3">
+            <p class="text-center">Awami National Party</p>
+            <div class="text-center my-3">
+                <span id="ANP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <button onclick="addVoteANP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px] btn">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72 py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16 m-auto">
+            <img src="./Images/PMAP.png" alt="PTI" class="w-32 mx-auto mb-3">
+            <p class="text-center">Pashtunkhwa Milli Awami Party</p>
+            <div class="my-3 text-center">
+                <span id="PMAP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVotePMAP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/NP.png" alt="NP" class="w-28 mx-auto mb-3">
+            <p class="text-center">	National Party</p>
+            <div class="text-center my-3">
+                <span id="NP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVoteNP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/BNP.png" alt="BNP" class="w-32 mx-auto mb-3">
+            <p class="text-center">Balochistan National Party</p>
+            <div class="text-center my-3">
+                <span id="BNP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <div class="line"></div>
+            <button onclick="addVoteBNP()"
+                class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px]">Vote</button>
+        </div>
+        <div class="card bg-white 2xl:w-80 w-72  m-auto py-10 rounded-xl hover:scale-125 hover:rounded-2xl duration-500 h-[22rem] mb-16">
+            <img src="./Images/BAP.png" alt="BAP" class="w-32 mx-auto mb-3">
+            <p class="text-center">Balochistan Awami Party</p>
+            <div class="text-center my-3">
+                <span id="BAP">0</span>
+                <span class="">VOTES</span>
+            </div>
+            <button onclick="addVoteBAP()"
                 class="bg-green-800 px-10 py-3 text-white font-semibold text-2xl hover:text-green-700 hover:bg-black duration-200 rounded-xl 2xl:ml-[97px] ml-[81px] btn">Vote</button>
         </div>
     </div>
